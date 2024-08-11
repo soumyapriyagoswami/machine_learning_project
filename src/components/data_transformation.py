@@ -59,7 +59,7 @@ class DataTransformation:
             logging.info(f"Numerical columns: {numerical_columns}")
 
             preprocessor=ColumnTransformer(
-                [
+                [d
                 ("num_pipeline",num_pipeline,numerical_columns),
                 ("cat_pipelines",cat_pipeline,categorical_columns)
 
